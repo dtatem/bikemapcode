@@ -92,8 +92,8 @@
         	}
 	}),
 	WWEH = new L.GPX("routes/WWEH.gpx", {async: true, display_wpt:false}),
-	FVTC = new L.GPX("routes/FVTCJune28loop.gpx", {async: true, display_wpt:false}); // semicolon for last variable
-
+	FVTC = new L.GPX("routes/FVTCJune28loop.gpx", {async: true, display_wpt:false})
+	WestRockTest = new L.GPX("routes/West_Rock_test.gpx", {async: true, display_wpt:false}); // semicolon for last variable
 	var map = L.map('map', {
 	center: [41.77, -72.69],
 	zoom: 14,
@@ -113,7 +113,8 @@
 	"Hartford city bike lanes (Trinity ArcGIS)": TrinGISMuniBikeLanes,
 	"Hartford city bike lanes connex (Trinity ArcGIS)": TrinGISMuniBikeLanes_Connex,
 	"WeHa-Willimantic-East Hampton": WWEH,
-	"Farmington Valley Canal Trail loop (GPX)": FVTC   //no comma after last layer
+	"Farmington Valley Canal Trail loop (GPX)": FVTC,
+	"West Rock Test": WestRockTest //no comma after last layer
 	};
 	// TO DO: improve positioning of controls with custom.css
 	var sidebar = L.control.sidebar('sidebar').addTo(map);
